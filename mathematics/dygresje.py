@@ -1,4 +1,4 @@
-
+from dataclasses import dataclass
 
 
 def funkcja1(x, **kwargs):
@@ -21,5 +21,12 @@ def main():
     funkcja1(1, **context)
     funkcja1(1, b=2, c=3)
 
+@dataclass
+class Post:
+    id: int
+    title: str
+    content: str
 
-main()
+
+p = Post(id=1, title="Ala", content="Ala ma kota")
+print(p)

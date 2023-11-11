@@ -22,7 +22,19 @@ chce miec wypisane tytuly postow ktore beda jednoczesnie linkami
 1. trzeba utworzyc nowa aplikacje (blog)
 2. utworz serwis BlogService - z metodą list (na razie zwraca wymyślona liste tytulow postow)
 3. w nowej aplikacji trzeba utworzyc szablon, ktory wypisze te tytuly w formie listy odnosnikow
+4. analogicznie do mathematics - zadbać o url, stworzyc odpowiednia funkcje widoku
 
 /blog/posts/<id> (liczone od 1)
 
 
+# cwiczenie 
+
+Projekt: bp_monitor
+aplikacja: measurements
+urls, widok, service, faker -wykorzystaj do pokazania listy fakeowych pomiarow cisnienia
+
+data: datetime
+systolic: int (60-250)
+diastolic: int (30-180)
+
+rozwiazanie przeslac jako link do platformy github
