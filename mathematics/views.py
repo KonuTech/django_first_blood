@@ -6,9 +6,32 @@ from mathematics.services import AlgebraService
 from django.template.loader import render_to_string
 
 
+# def hello(request, name="World!"):
+#     rendered = render_to_string("mathematics/calculations.html", {"text": f"Hello {name}"})
+#     return HttpResponse(rendered)
+
+# def hello(request, name="World!"):
+#     return render(
+#         request, 
+#         "mathematics/calculations.html",
+#          {"text": f"Hello {name}"}
+#     )
+
+
 def hello(request, name="World!"):
-    rendered = render_to_string("mathematics/calculations.html", {})
-    return HttpResponse(rendered)
+    return render(
+        request=request, 
+        template_name="mathematics/calculations.html",
+        context={
+            "text": f"Hello {name}",
+            "text2": "Ala ma kota",  
+            "lista": [10, 2, "a", "b"],
+            "tupla": ("x", "y", 100),
+            "zbior": {1, 2, 3},
+            "slownik": {"klucz": "wartosc"}
+        }
+    )
+
 
 def calculator(request: HttpRequest , operation: str, a: int, b: int) -> HttpResponse:
     

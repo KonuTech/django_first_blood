@@ -13,10 +13,47 @@
 <div>
     <ul>
         <li><a href="/hello" >Hello world endpoint</a></li>
+        <li><a href="/hello/ALX" >Hello ALX endpoint</a></li>
+        <li><a href="/hello/Rafal" >Hello Rafal endpoint</a></li>
     </ul>
 </div>
 
+{{ text }}
 
+<p>{{ text50 }}</p>
+
+{% if lista.0 == 10 %}
+<p>{{ lista }}</p>
+{% endif %}
+<p>{{ lista.3 }}</p>
+
+
+
+
+
+
+<p>{{ tupla }}</p>
+
+<p>{{ zbior }}</p>
+<ol>
+{% for el in zbior %}
+    <li>{{ el }}</li>
+{% endfor %}
+</ol>
+
+<p>{{ slownik }}</p>
+<p>{{ slownik.klucz }}</p>
+
+
+
+<div>
+    <ul>
+        <li><a href="/blog/posts/1" >Post pierwszy</a></li>
+        <li><a href="/blog/posts/2"  >Hello ALX endpoint</a></li>
+        <li><a href="/blog/posts/3"  >Hello Rafal endpoint</a></li>
+        ...
+    </ul>
+</div>
 
 </body>
 </html>
